@@ -3,15 +3,14 @@
 #include"mat.hpp"
 #include<vector>
 #include<ctype.h>
-constexpr auto A  = 33;
-constexpr auto B = 126;
 using namespace std;
-
+const int A  = 33;
+const int B = 126;
 /* AUTHOR: BAR GOLDENBERG 209894286 */
 /**
  * @brief This function loops a 2d array and fills it with a character.
  * 
- * @param arr 
+ * @param mat 
  * @param l 
  * @param w 
  * @param minwidth 
