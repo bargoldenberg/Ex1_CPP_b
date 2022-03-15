@@ -4,8 +4,8 @@
 #include<vector>
 #include<ctype.h>
 using namespace std;
-const int A  = 33;
-const int B = 126;
+const int lowerBound  = 33;
+const int upperBound = 126;
 /* AUTHOR: BAR GOLDENBERG 209894286 */
 /**
  * @brief This function loops a 2d array and fills it with a character.
@@ -58,10 +58,10 @@ string ariel::mat(int w,int l,char c,char spacing){
         word+=to_string(w);
         throw invalid_argument(word+"Mat size is always positive");
     }
-    if(c<A||spacing<A){
+    if(c<lowerBound||spacing<lowerBound){
         throw invalid_argument("illegal char not printable");
     }
-    if(c>B||spacing>B){
+    if(c>upperBound||spacing>upperBound){
         throw invalid_argument("illegal char not printable");
     }
     /*
