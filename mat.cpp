@@ -91,7 +91,7 @@ string ariel::mat(int w,int l,char c,char spacing){
     }
     for(int i=0;i<l;i++){
         for(int j=0;j<w;j++){
-            ans.push_back(mat[i][j]);
+            ans.push_back(mat.at(i).at(j));
         }
         ans+="\n";
     }
