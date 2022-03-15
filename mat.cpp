@@ -59,10 +59,10 @@ string ariel::mat(int w,int l,char c,char spacing){
         throw invalid_argument(word+"Mat size is always positive");
     }
     if(c<A||spacing<A){
-        throw invalid_argument("illegal char not on ascii table");
+        throw invalid_argument("illegal char not printable");
     }
     if(c>B||spacing>B){
-        throw invalid_argument("illegal char not on ascii table");
+        throw invalid_argument("illegal char not printable");
     }
     /*
     Continue building carpet if input is legal.
